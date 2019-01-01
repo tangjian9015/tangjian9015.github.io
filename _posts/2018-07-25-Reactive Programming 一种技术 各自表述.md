@@ -1,5 +1,4 @@
-# Reactive Programming 一种技术，各自表述
-
+# Reactive Programming技术
 
 ## 前言
 
