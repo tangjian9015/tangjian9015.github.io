@@ -2,4 +2,4 @@
 
 - 各位亲，领个红包噻！！！
   
-![微信公众号二维码](assets/shouqianma.jpg)
+![支付宝收钱二维码](assets/shouqianma.jpg)
