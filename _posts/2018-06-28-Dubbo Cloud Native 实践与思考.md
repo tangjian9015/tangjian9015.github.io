@@ -328,9 +328,6 @@ CNCF 体系作为目前最热门的架构选型之一，基本上围绕着 Kuber
 在场景上，Spring Framework `@ComponentScan` 组件扫描逻辑更为复杂。而在 `@DubboComponentScan`  只需关注 `@Service` 和 `@Reference` 处理。
 
 
-> 注：更多 Dubbo 注解驱动的详情，请参考[《Dubbo 注解驱动（Annotation-Driven）》](https://github.com/mercyblitz/blogs/blob/master/java/dubbo/Dubbo-Annotation-Driven.md)
-
-
 ##### `@DubboComponentScan` 服务端示例
 
 假设，服务提供方和服务消费分均依赖服务接口`DemoService`:
@@ -358,7 +355,7 @@ import com.alibaba.dubbo.demo.DemoService;
 /**
  * Annotation {@link DemoService} 实现
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @author <a href="mailto:TANGJIAN9015@gmail.com">TANGJIAN9015</a>
  */
 @Service
 public class AnnotationDemoService implements DemoService {
@@ -386,7 +383,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * 服务提供方配置
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @author <a href="mailto:TANGJIAN9015@gmail.com">TANGJIAN9015</a>
  */
 @Configuration
 @DubboComponentScan("com.alibaba.dubbo.demo.provider") // 扫描 Dubbo 组件
@@ -437,7 +434,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 /**
  * 服务提供方引导类
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @author <a href="mailto:TANGJIAN9015@gmail.com">TANGJIAN9015</a>
  */
 public class ProviderBootstrap {
 
@@ -476,7 +473,7 @@ import com.alibaba.dubbo.demo.DemoService;
 /**
  * Annotation 驱动 {@link DemoService} 消费方
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @author <a href="mailto:TANGJIAN9015@gmail.com">TANGJIAN9015</a>
  */
 public class AnnotationDemoServiceConsumer {
 
@@ -507,7 +504,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * 服务消费方配置
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @author <a href="mailto:TANGJIAN9015@gmail.com">TANGJIAN9015</a>
  */
 @Configuration
 @DubboComponentScan
@@ -560,7 +557,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 /**
  * 服务消费端引导类
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @author <a href="mailto:TANGJIAN9015@gmail.com">TANGJIAN9015</a>
  */
 public class ConsumerBootstrap {
 
@@ -645,9 +642,6 @@ public class ConsumerBootstrap {
 通过申明对应的 Spring 扩展标签，在 Spring 应用上下文中将自动生成相应的配置 Bean。
 
 在 Dubbo 官方用户手册的[“属性配置”](http://dubbo.io/books/dubbo-user-book/configuration/properties.html)章节中，`dubbo.properties` 配置属性能够映射到  `ApplicationConfig` 、`ProtocolConfig` 以及 `RegistryConfig` 的字段。从某种意义上来说，`dubbo.properties`  也是 Dubbo 的外部化配置。
-
-> 注：更多外部化配置的详情，请参考[《Dubbo 外部化配置（Externalized Configuration）》](https://github.com/mercyblitz/blogs/blob/master/java/dubbo/Dubbo-Externalized-Configuration.md)
-
 
 
 
@@ -790,7 +784,7 @@ public class DefaultDemoService implements DemoService {
 * 执行 `curl` 命令
 
 ```
-mercyblitz$ curl http://localhost:8080/sayHello?name=Hello
+tangjian$ curl http://localhost:8080/sayHello?name=Hello
 ```
 
 * 测试结果
@@ -816,4 +810,3 @@ mercyblitz$ curl http://localhost:8080/sayHello?name=Hello
 * [Prometheus 官网](https://prometheus.io/)：https://prometheus.io/
 * [OpenTsdb 官网](http://opentsdb.net/)：http://opentsdb.net/
 * [Grafana 官网](https://grafana.com/)：https://grafana.com/
-* [小马哥 Github](https://github.com/mercyblitz)：https://github.com/mercyblitz 
