@@ -4,4 +4,4 @@
 ![微信公众号二维码](assets/gongzonghao.jpg)
 
 ### 2. 支付宝领赚钱红包 - 蚊子再小也是肉，有也总比没有好
-![支付宝收钱二维码](assets/shouqianma.jpg =320x480)
+![支付宝收钱二维码](assets/shouqianma.jpg=320x480)
